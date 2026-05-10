@@ -3,8 +3,8 @@ public:
     long long TotalH(vector<int>& piles, int hourly) {
         long long total = 0;
 
-        for(int pile : piles) {
-            total += (pile + hourly - 1) / hourly;
+        for(int i = 0;i<piles.size();i++){
+            total += (piles[i] + hourly - 1) / hourly;
         }
 
         return total;
