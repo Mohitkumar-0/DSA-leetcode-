@@ -15,7 +15,7 @@ public:
         ListNode* start = head;
         int sum = 0;
         while(temp!= NULL){
-            while(temp->val !=0 && temp->val!=0){
+            while(temp->val !=0){
                 sum+=temp->val;
                 temp=temp->next;
             }
