@@ -8,7 +8,7 @@ public:
             if(add>w){
                 count++;
                 add = 0;
-                i = i-1;
+                i = i-1; // instead of these two lines i can take add = weights[i] also. No reassigning needed.
             }
         }
         return count <= days;
